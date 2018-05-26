@@ -11,7 +11,6 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
     ImageView mImageView;
-    Button button;
 
     static final int REQUEST_IMAGE_CAPTURE = 1;
 
@@ -38,14 +37,6 @@ public class MainActivity extends AppCompatActivity {
 
         mImageView = findViewById(R.id.imageView1);
 
-        button = findViewById(R.id.button1);
-        button.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View arg0) {
-                dispatchTakePictureIntent();
-            }
-
-        });
+        dispatchTakePictureIntent();
     }
 }
